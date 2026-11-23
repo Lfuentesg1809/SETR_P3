@@ -84,16 +84,12 @@ Para representar las conexiones del circuito he utilizado **Tinkercad**, ya que 
 
 Una limitación que encontré en Tinkercad fue que no disponía del módulo joystick utilizado en la práctica. Por ese motivo, aunque el joystick no aparece representado físicamente en el esquema, he indicado los pines a los que está conectado en el montaje real.
 
-En concreto, el joystick utiliza los pines analógicos **A0 y A1** para sus dos ejes y el pin digital **7** para el pulsador integrado.
+En concreto, el joystick utiliza los pines analógicos **A0 y A1** para sus dos ejes y el pin digital **7** para el pulsador integrado. Esto está señalado en el esquema del circuito.
 
 De esta manera, aunque no aparezca el componente en el dibujo, quedan especificadas sus conexiones y se puede entender cómo está integrado en el circuito.
 
 ## Conclusión
 
-Esta práctica me ha servido para aprender a integrar distintos sensores y actuadores en un mismo proyecto y, sobre todo, a organizar el código para que todas las tareas puedan gestionarse de forma coordinada.
+Esta práctica me ha servido para aprender a integrar distintos sensores y actuadores en un mismo proyecto y, sobre todo, a organizar el código y los pines para que todas las tareas puedan gestionarse de forma coordinada.
 
 Al principio, la mayor dificultad fue conseguir que funcionasen correctamente todas las conexiones y librerías, pero desarrollar el proyecto poco a poco me permitió detectar y solucionar los problemas con mayor facilidad.
-
-Considero que las decisiones más importantes han sido utilizar una máquina de estados, gestionar los tiempos sin `delay()`, incorporar interrupciones para determinados eventos y utilizar el Watchdog como mecanismo de recuperación ante bloqueos.
-
-Gracias a esta organización, el programa resulta más fácil de entender, mantener y ampliar, además de permitir una respuesta más rápida a los eventos del sistema.
